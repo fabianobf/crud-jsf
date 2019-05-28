@@ -9,46 +9,47 @@
     <h:outputStylesheet library="css" name="bootstrap.min.css"></h:outputStylesheet>
   </h:head>
   <h:body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-      <a class="navbar-brand" href="/locadora-de-veiculos">UpCar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive">
+    <div class="navbar navbar-expand-lg navbar-dark bg-success">
+      <a class="navbar-brand" href="/locadora-de-veiculos/index.xhtml">Locadora</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/locadora-de-veiculos">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/locadora-de-veiculos/index.xhtml">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
               Clientes
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Listar todos</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/locadora-de-veiculos/customers/create.xhtml">Adicionar</a>
+              <a class="dropdown-item" href="/locadora-de-veiculos/customers/list.xhtml">Listar todos</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
               Aluguéis
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Adicionar</a>
-              <a class="dropdown-item" href="#">Listar todas</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/locadora-de-veiculos/rents/create.xhtml">Adicionar</a>
+              <a class="dropdown-item" href="/locadora-de-veiculos/rents/list.xhtml">Listar todos</a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
               Veículos
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/projeto/vehicles/create.xhtml">Adicionar</a>
-              <a class="dropdown-item" href="/projeto/vehicles/list.xhtml">Listar todos</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/locadora-de-veiculos/vehicles/create.xhtml">Adicionar</a>
+              <a class="dropdown-item" href="/locadora-de-veiculos/vehicles/list.xhtml">Listar todos</a>
             </div>
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
 
     <div class="jumbotron text-center">
       <h2>
